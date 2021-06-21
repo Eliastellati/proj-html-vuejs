@@ -26,4 +26,11 @@ export default {
   margin: 0;
   padding: 0;
 }
+button {
+        padding: 1rem;
+        color: white;
+        background-color: #1fad96;
+        border-radius: 5px;
+        border: none;
+    }
 </style>

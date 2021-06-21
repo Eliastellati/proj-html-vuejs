@@ -82,13 +82,6 @@ nav {
         font-weight: 400;
         color: #bcbcbc;
         padding: .5rem 0 2rem 0;
-    };
-    button {
-        padding: 1rem;
-        color: white;
-        background-color: #1fad96;
-        border-radius: 5px;
-        border: none;
     }
 }
 </style>
