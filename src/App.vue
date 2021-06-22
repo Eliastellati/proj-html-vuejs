@@ -33,4 +33,17 @@ button {
         border-radius: 5px;
         border: none;
     }
+h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        letter-spacing: 1;
+        text-align: center;
+        span {
+            font-weight: 300;
+            color: #27ab94;
+        }
+}
+.circle {
+  border-radius: 100%;
+}
 </style>

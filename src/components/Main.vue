@@ -150,6 +150,23 @@
               </div>
           </div>
       </section>
+      <section>
+          <div class="container cnt-3">
+              <h2>Why people talk about <span>max coach</span></h2>
+              <div class="testimonial">
+                  <div class="testimonial-left">
+                      <div class="circle brown">
+                          <img class="profile" src="../assets/images/testimonial-avata-02.jpg" alt="">
+                          <img class="pattern" src="../assets/images/maxcoach-shape-05-100x100.png" alt="">
+                      </div>
+                  </div>
+                  <div class="testimonial-right">
+                      <p>I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal for people like me.</p>
+                  </div>
+              </div>
+          </div>
+          
+      </section>
   </main>
 </template>
 
@@ -167,14 +184,13 @@ main {
 .container {
     width: 70%;
     margin: 0 auto;
+    padding: 100px 0;
 }
 .cnt-1 {
     background-image: url('../assets/images/background-pattern-grid-line.png');
     background-repeat: repeat;
     background-size: calc(100% / 4);
     background-position: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
     .text-container {
         width: 60%;
         margin: 0 auto;
@@ -298,7 +314,6 @@ main {
         font-size: 12px;
         color:#6c6c6c;
         text-align: center;
-        padding-top: 100px;
     };
     h2 {
         text-transform: capitalize;
@@ -356,6 +371,51 @@ main {
             }
         }
     }
+}
+
+.cnt-3 {
+    .testimonial{
+        width: 80%;
+        margin: 3rem auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .testimonial-left {
+            display: inline-block;
+           .brown {
+              position: relative;
+              width: 80px;
+              height: 80px;
+              background-color: #e2a957;
+              left: 10px;
+              .profile {
+                 position: absolute;
+                 width: 200px;
+                 height: 200px;
+                 top: 10px;
+                 left: 0;
+                 z-index: 3;
+                 border-radius: 100%;
+               };
+               .pattern {
+                   position: absolute;
+                   z-index: 0;
+                   bottom: -180px;
+                   left: 100px;
+                   width: 100px;
+                   height: 100px;
+               }
+            }
+        };
+        .testimonial-right {
+            width: 50%;
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    
 }
 
 </style>
