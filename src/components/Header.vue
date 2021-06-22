@@ -21,6 +21,20 @@
           <h4>Get teamed up of the same will</h4>
           <button>Get started for free</button>
       </div>
+      <div class="hero-content">
+          <div class="images">
+              <img src="../assets/images/home-6-hero-left-person.png" alt="">
+          </div>
+          
+          <div class="youtube-screen">
+              <img src="../assets/images/icon-youtube-play.png" alt="">
+          </div>
+
+          <div class="images">
+              <img src="../assets/images/home-6-hero-right-person-195x300.png" alt="">
+          </div>
+          
+      </div>
   </header>
 </template>
 
@@ -82,6 +96,36 @@ nav {
         font-weight: 400;
         color: #bcbcbc;
         padding: .5rem 0 2rem 0;
+    }
+}
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    .youtube-screen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../assets/images/home-6-hero-poster-final.jpg');
+        width: 60%;
+        height: 100%;
+        border: 20px solid white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px lightgrey;
+        img {
+            width: 100px;
+            height: auto;
+            margin: auto;
+        }
+    };
+    .images {
+        width: 20%;
+        img {
+            width: 100%;
+        }
     }
 }
 </style>
