@@ -162,6 +162,28 @@
                   </div>
                   <div class="testimonial-right">
                       <p>I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal for people like me.</p>
+                      <h5>MINA HOLLANCE</h5>
+                      <span>/Freelancer</span>
+                  </div>
+              </div>
+              <div class="sponsors-container">
+                  <div class="sponsor">
+                    <img src="../assets/images/client-logo-colored-01.png" alt="">
+                  </div>
+                  <div class="sponsor">
+                      <img src="../assets/images/client-logo-colored-02.png" alt="">
+                  </div>
+                  <div class="sponsor">
+                      <img src="../assets/images/client-logo-colored-03.png" alt="">
+                  </div>
+                  <div class="sponsor">
+                      <img src="../assets/images/client-logo-colored-04.png" alt="">
+                  </div>
+                  <div class="sponsor">
+                      <img src="../assets/images/client-logo-colored-05.png" alt="">
+                  </div>
+                  <div class="sponsor">
+                      <img src="../assets/images/client-logo-colored-06.png" alt="">
                   </div>
               </div>
           </div>
@@ -378,7 +400,7 @@ main {
         width: 80%;
         margin: 3rem auto;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-start;
 
         .testimonial-left {
@@ -409,10 +431,31 @@ main {
             }
         };
         .testimonial-right {
-            width: 50%;
+            width: 60%;
             p {
                 font-size: 20px;
+                color: #353635;
+            };
+            h5 {
+                font-size: 12px;
+                color: #353635;
+                padding: 2rem 0;
+            };
+            span {
+                color: #bcbcbc;
+                font-size: 10px;
             }
+
+        }
+    };
+    .sponsors-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 5rem;
+        .sponsor {
+            width: calc(100% / 6);
+            padding: 1rem;
         }
     }
     
