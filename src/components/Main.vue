@@ -31,15 +31,35 @@
               <div class="cards-container">
                   <div class="column cln-1">
                       <div class="card">
-                          <h3>Graphic Design</h3>
-                          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatum quia nemo ipsum debitis necessitatibus officiis quam natus quaerat autem.</p>
-                          <img src="../assets/images/home-6-service-image-01.png" alt="">
+                          <div class="card-text">
+                              <h3>Graphic Design</h3>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit voluptatum quia nemo ipsum debitis necessitatibus officiis quam natus quaerat autem.</p>  
+                          </div>
+                          <img src="../assets/images/home-6-service-image-01.png"  width="160px" alt="">
                       </div>
-                      <div class="card"></div>
+                      <div class="card">
+                          <img src="../assets/images/home-6-service-image-03.png" width="120px" alt="">
+                          <div class="card-text">
+                               <h3>Idea Discussion</h3>
+                               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, vero natus. Doloribus numquam maxime cupiditate inventore a, assumenda eveniet odit.</p>
+                          </div>
+                      </div>
                   </div>
                   <div class="column cln-2">
-                      <div class="card"></div>
-                      <div class="card"></div>
+                      <div class="card c-3">
+                          <div class="card-text">
+                              <h3>Business Administration</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ipsam deserunt. Expedita minima a sapiente.</p>
+                          </div>
+                          <img src="../assets/images/home-6-service-image-02.png" width="120px" alt="">
+                      </div>
+                      <div class="card c-4">
+                          <img src="../assets/images/home-6-service-image-04.png" width="150px" alt="">
+                          <div class="card-text">
+                              <h3>Web Development</h3>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere explicabo sit commodi! Dolorum, incidunt aut!</p>
+                          </div>
+                      </div>
                   </div>
                   <div class="service-text">
                       <h5>together we can create</h5>
@@ -115,26 +135,52 @@ main {
     };
     .cards-container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: start;
+        align-items: center;
         .column {
-            width: 20%;
+            width: 22%;
             .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 background-color: #ffffff;
                 box-shadow: 1px 1px 28px grey;
-                h3, p {
+                height: 300px;
+                width: 200px;
+                margin: 1rem .4rem;
+                h3 {
+                    font-size: 15px;
+                    color: #1f2154;
+                    padding: 1rem;
+                };
+                p {
                     font-size: 10px;
-                    padding: .3rem;
-                }
+                    padding: .4rem 1rem 0 1rem;
+
+                };
                 img {
-                    width: 100%;
-                    object-fit: contain;
+                    max-width: 100%;
                 }
             }
+        };
+        .c-4 img {
+            margin: 10px auto;
+        }
+        .c-3 img {
+            margin: 0 auto;
+        }
+        .cln-1 {
+            align-self: flex-start;
+        }
+        .cln-2 {
+           margin-top: 3rem;
+           align-self: flex-end;
         }
 
         .service-text {
             width: 40%;
             padding: 3rem;
+            margin-left: 3rem;
             h5 {
                 color:#6c6c6c;
                 text-transform: uppercase;
