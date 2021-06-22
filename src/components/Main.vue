@@ -75,6 +75,81 @@
               </div>
           </div>
       </section>
+      <section class="lightblue">
+          <div class="container cnt-2">
+              <h5>choose a course to get featured</h5>
+              <h2>latest featured <span>courses</span></h2>
+              <div class="courses-container">
+                  <div class="course">
+                      <img src="../assets/images/course-02-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">$40.<span>00</span></h3>
+                          <p>Learning to Write as a Professional Author</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 20 Lessons</h6>
+                              <h6><i class="far fa-user"></i> 50 Students</h6>
+                          </aside>
+                      </div>
+                  </div>
+                  <div class="course">
+                      <img src="../assets/images/stock-full-hd-03-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">Free</h3>
+                          <p>Customer-Centric Info-Tech Strategies</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 24 Lessons</h6>
+                              <h6><i class="far fa-user"></i> 769 Students</h6>
+                          </aside>                       
+                      </div>
+                  </div>
+                  <div class="course">
+                      <img src="../assets/images/stock-full-hd-04-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">$19.<span>00</span></h3>
+                          <p>Open Programming Courses for Everyone: Python</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 17 Lessons</h6>
+                              <h6><i class="far fa-user"></i> 62 Students</h6>
+                          </aside>
+                      </div>
+                  </div>
+                  <div class="course">
+                      <img src="../assets/images/stock-full-hd-06-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">$26.<span>00</span></h3>
+                          <p>Academic Listening and Note-taking</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 14Lessons</h6>
+                              <h6><i class="far fa-user"></i> 67 Students</h6>
+                          </aside>
+                      </div>
+                  </div>
+                  <div class="course">
+                      <img src="../assets/images/course-featured-image-01-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">$39.<span>00</span></h3>
+                          <p>Master J-Query in a Short Period of Time</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 6 Lessons</h6>
+                              <h6><i class="far fa-user"></i> 51 Students</h6>
+                          </aside>
+                      </div>
+                  </div>
+                  <div class="course">
+                      <img src="../assets/images/stock-full-hd-05-480x298.jpg" alt="">
+                      <div class="course-info">
+                          <h3 class="price">$59.<span>00</span></h3>
+                          <p>Introduction to Javascript for Beginners</p>
+                          <aside>
+                              <h6><i class="far fa-file-alt"></i> 14 Lessons</h6>
+                              <h6><i class="far fa-user"></i> 76 Students</h6>
+                          </aside>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
   </main>
 </template>
 
@@ -99,6 +174,7 @@ main {
     background-size: calc(100% / 4);
     background-position: center;
     padding-top: 100px;
+    padding-bottom: 100px;
     .text-container {
         width: 60%;
         margin: 0 auto;
@@ -207,6 +283,74 @@ main {
                     i {
                         color: #27ab94;
                         padding-right: .5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lightblue {
+    background-color: #F5F7FA;
+    padding: 0 100px;
+    h5 {
+        text-transform: uppercase;
+        font-size: 12px;
+        color:#6c6c6c;
+        text-align: center;
+        padding-top: 100px;
+    };
+    h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        letter-spacing: 1;
+        text-align: center;
+        span {
+            font-weight: 300;
+            color: #27ab94;
+        }
+    };
+    .courses-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .course {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 200px;
+            padding: .5rem;
+            img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 100%;
+            };
+            .course-info {
+                padding: .5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start ;
+
+                .price {
+                    color:#27ab94;
+                    span {
+                        font-size: 14px;
+                    }
+                };
+                p {
+                    font-size: 14px;
+                    color: #293259;
+                };
+                h6 {
+                    display: inline-block;
+                    margin-right: 1rem;
+                    font-size: 10px;
+                    color:#bcbcbc;
+                    i {
+                        padding: .4rem 0;
                     }
                 }
             }
