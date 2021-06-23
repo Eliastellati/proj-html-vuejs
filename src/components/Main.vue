@@ -463,6 +463,7 @@ main {
             width: 50%;
             height: 200px;
             padding: .5rem;
+            transition: .4s ease-out;
             img {
                 width: 120px;
                 height: 120px;
@@ -496,7 +497,11 @@ main {
                     }
                 }
             }
+        };
+        .course:hover {
+            background-color: white;
         }
+
     }
 }
 

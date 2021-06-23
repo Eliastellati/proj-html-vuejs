@@ -13,7 +13,11 @@
                   <li><a href="#">cart <i class="fas fa-chevron-down"></i></a></li>
                   <li><a href="#">profile <i class="fas fa-chevron-down"></i></a></li>
               </ul>
-              <input type="text" placeholder="Search">
+              <div class="input-field">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search">
+              </div>
+              
           </div>
       </nav>
       <div class="hero-text">
@@ -58,7 +62,7 @@ nav {
     display: flex;
     justify-items: space-between;
     align-items: center;
-    width: 70%;
+    width: 80%;
     height: 100px;
     margin: 0 auto;
     img {
@@ -73,17 +77,29 @@ nav {
              li {
                 display: inline-block;
                 padding: .5rem;
-                font-size: 14px;
+                font-size: 12px;
                 a {
                     color: white;
                     text-decoration: none;
                 }
              };
              input {
-                 height: 40px;
+                  padding: 12px 20px;
              }
         }
     }    
+}
+.input-field {
+     position: relative;
+     display: inline-block;
+    i {
+        position: absolute;
+         top:50%;
+         right: 0%;
+         color: #27ab96;
+         padding: 1rem;
+         transform: translateY(-50%);
+     }
 }
 
 .hero-text {
@@ -100,6 +116,10 @@ nav {
         font-weight: 400;
         color: #bcbcbc;
         padding: .5rem 0 2rem 0;
+    };
+    button:hover {
+        background-color: white;
+        color: #27ab94;
     }
 }
 .hero-content {
