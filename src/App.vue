@@ -26,6 +26,9 @@ export default {
   margin: 0;
   padding: 0;
 }
+section {
+  position: relative;
+}
 button {
         padding: 1rem;
         color: white;
@@ -36,7 +39,7 @@ button {
 h2 {
         text-transform: capitalize;
         font-size: 30px;
-        letter-spacing: 1;
+        letter-spacing: 1.1;
         text-align: center;
         span {
             font-weight: 300;
@@ -45,5 +48,23 @@ h2 {
 }
 .circle {
   border-radius: 100%;
+  position: absolute;
 }
+
+// .ronchi {
+//   background-color: #efb056;
+// }
+
+// .royal {
+//   background-color: royalblue;
+// }
+// .coral {
+//   background-color: #a65e6d;
+// }
+// .green {
+//   background-color: #27ab64;
+// }
+// .orange {
+//   background-color: #febc4d;
+// }
 </style>

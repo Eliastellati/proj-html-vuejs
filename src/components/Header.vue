@@ -4,14 +4,14 @@
           <img src="../assets/images/light-logo.png" alt="">
           <div class="nav-right">
               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Pages</a></li>
-                  <li><a href="#">Courses</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">cart</a></li>
-                  <li><a href="#">profile</a></li>
+                  <li><a href="#">Home <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Pages <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Courses <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Features <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Blog <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Shop <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">cart <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">profile <i class="fas fa-chevron-down"></i></a></li>
               </ul>
               <input type="text" placeholder="Search">
           </div>
@@ -50,6 +50,9 @@ header {
     font-family: 'Poppins', sans-serif;
     color: white;
     height: 90vh;
+    background-image: url('../assets/images/Component 1.png');
+    background-position: center;
+    background-size: cover;
 }
 nav {
     display: flex;
@@ -69,7 +72,8 @@ nav {
              display: inline-block;
              li {
                 display: inline-block;
-                padding: 1rem;
+                padding: .5rem;
+                font-size: 14px;
                 a {
                     color: white;
                     text-decoration: none;
